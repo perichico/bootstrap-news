@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portal de Noticias</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header y Navegación -->
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="h3">PeriNews</h1>
+
+                <!-- Campo de búsqueda -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar noticias..." aria-label="Buscar">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+
+                <!-- Menú de navegación -->
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#politica">Política</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#deportes">Deportes</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#tecnologia">Tecnología</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#cultura">Cultura</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Carrusel de Noticias Destacadas -->
+    <div id="noticiasCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/macron.png" class="d-block w-100" alt="Noticia 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Macron convoca de urgencia a las grandes potencias europeas para responder a Trump</h5>
+                    <p>Los últimos movimientos de la Casa Blanca empujan a Europa a moverse con mucha más rapidez de lo
+                        que es habitual...</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carretera.webp" class="d-block w-100" alt="Noticia 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>DGT refuerza la vigilancia de camiones y autobuses para garantizar la seguridad vial en las
+                        carreteras</h5>
+                    <p>La campaña se llevará a cabo del 17 al 23 de febrero en todo tipo de vías y se realizará de forma
+                        simultánea en varios países europeos. De forma complementaria se realizarán ITV móviles para
+                        comprobar las condiciones técnicas de los vehículos pesados que están circulando.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#noticiasCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#noticiasCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <!-- Sección de Noticias Recientes -->
+    <div class="container mt-4">
+        <h2 class="mb-3">Últimas Noticias</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/hipoteca.webp" class="card-img-top" alt="Noticia 3">
+                    <div class="card-body">
+                        <h5 class="card-title">El arreón de las hipotecas en el final de año eleva un 11,2% los
+                            préstamos para vivienda firmados en 2024</h5>
+                        <p class="card-text">Sólo en el mes de diciembre, las hipotecas sobre vivienda aumentaron un 30%
+                            más respecto al año anterior y alcanzaron las 32.249.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/papa.webp" class="card-img-top" alt="Noticia 4">
+                    <div class="card-body">
+                        <h5 class="card-title">¿Cuál es el estado del papa Francisco? ¿Qué temen ahora los médicos?</h5>
+                        <p class="card-text">El pontífice está hospitalizado en el Gemelli desde el 14 de febrero con
+                            dificultades respiratorias.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/gasolina.webp" class="card-img-top" alt="Noticia 5">
+                    <div class="card-body">
+                        <h5 class="card-title">El precio de la gasolina y el gasoil en Madrid hoy, miércoles 19 de
+                            febrero de 2025</h5>
+                        <p class="card-text">El precio máximo y mínimo del Gasóleo A y la gasolina 95 y 98 oscila todos
+                            los días.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Noticias por Categorías -->
+    <div class="container mt-5">
+        <h2 class="mb-4">Noticias por Categorías</h2>
+
+        <!-- Tecnología -->
+        <h3 class="mb-3 text-primary" id="tecnologia">Tecnología</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/elon.jpg" class="card-img-top" alt="Noticia Tecnología 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Elon Musk anuncia Grok 3</h5>
+                        <p class="card-text">Elon Musk anuncia que Grok 3, la IA con la que pretende desbancar a
+                            ChatGPT, llegará en las próximas semanas "superando todo lo que se ha lanzado"</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/hacienda.jpg" class="card-img-top" alt="Noticia Tecnología 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Así es como Hacienda va a utilizar la Inteligencia Artificial</h5>
+                        <p class="card-text">La Agencia Tributaria presentó el año pasado un manual en el que marcan su
+                            estrategia para implementar la IA en sus servicios.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deportes -->
+        <h3 class="mt-5 mb-3 text-success" id="deportes">Deportes</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/madrid.avif" class="card-img-top" alt="Noticia Deportes 1">
+                    <div class="card-body">
+                        <h5 class="card-title">El Real Madrid, contra el Manchester City y su mente</h5>
+                        <p class="card-text">Los blancos, que defienden ante el equipo inglés el 2-3 del Etihad,
+                            afrontan el reto psicológico de manejar la ventaja, un escenario que se les ha torcido a
+                            menudo y para el que Ancelotti pide jugar igual que en la ida.</p>
+                        <a href="#" class="btn btn-success">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/djokovic.avif" class="card-img-top" alt="Noticia Deportes 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Poquito Djokovic para demasiado Berrettini</h5>
+                        <p class="card-text">El italiano apea en la primera ronda al campeón de 24 grandes, que
+                            regresaba tras casi un mes sin competir (7-6(4) y 6-2): “He jugado sin ningún dolor, no hay
+                            excusa”.</p>
+                        <a href="#" class="btn btn-success">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Política -->
+        <h3 class="mt-5 mb-3 text-danger" id="politica">Política</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/trump.avif" class="card-img-top" alt="Noticia Política 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Trump rompe con décadas de política exterior de EE UU para priorizar la
+                            normalización con Rusia</h5>
+                        <p class="card-text">El presidente culpa a Zelenski, y no a Moscú, de la guerra: según él, debió
+                            aceptar la pérdida de territorio para evitar el conflicto.</p>
+                        <a href="#" class="btn btn-danger">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/lugo.jpeg" class="card-img-top" alt="Noticia Política 2">
+                    <div class="card-body">
+                        <h5 class="card-title">El pueblo natal de Manuel Fraga le retirará los títulos honoríficos que
+                            le otorgó durante el franquismo</h5>
+                        <p class="card-text">PSOE, BNG y Vilalbaberta, con mayoría sobre el PP en Vilalba (Lugo),
+                            quieren eliminar la escultura que lo homenajea como ministro de la dictadura en el centro de
+                            la villa y suprimir su condición de hijo predilecto.</p>
+                        <a href="#" class="btn btn-danger">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cultura -->
+        <h3 class="mt-5 mb-3 text-warning" id="cultura">Cultura</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/gibraltar.jpeg" class="card-img-top" alt="Noticia Cultura 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Los prehistóricos del Estrecho de Gibraltar que sabían navegar hace 6.000
+                            años</h5>
+                        <p class="card-text">Investigadores de la Universidad de Granada confirman la datación de unas
+                            pinturas rupestres de barcos en la Laja Alta de Jimena como las más antiguas del
+                            Mediterráneo occidental.</p>
+                        <a href="#" class="btn btn-warning text-white">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/juanmarine.avif" class="card-img-top" alt="Noticia Cultura 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Muere el director de fotografía y restaurador fílmico Juan Mariné a los
+                            104 años</h5>
+                        <p class="card-text">El cineasta rodó el entierro de Durruti, se escapó de un campo de
+                            prisioneros en Francia y fue responsable de la fotografía de 140 títulos. En 2024 recibió el
+                            Goya de Honor.</p>
+                        <a href="#" class="btn btn-warning text-white">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Funcionalidad: Personalización de temas favoritos -->
+    <section class="container mt-4">
+        <h2>Personalización de Temas</h2>
+        <p>Elige tus categorías favoritas:</p>
+        <div class="d-flex gap-2">
+            <button class="btn btn-secondary">Política</button>
+            <button class="btn btn-secondary">Deportes</button>
+            <button class="btn btn-secondary">Tecnología</button>
+            <button class="btn btn-secondary">Cultura</button>
+        </div>
+    </section>
+
+    <!-- Funcionalidad: Compartir en redes sociales -->
+    <section class="container mt-4">
+        <h2>Compartir Noticias</h2>
+        <p>Comparte estas noticias en tus redes sociales:</p>
+        <div>
+            <button class="btn btn-primary">Facebook</button>
+            <button class="btn btn-info">Twitter/X</button>
+            <button class="btn btn-success">WhatsApp</button>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2025 Portal de Noticias | <a href="#" class="text-white">Términos de Uso</a> | <a href="#"
+                class="text-white">Política de Privacidad</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
